@@ -18,3 +18,12 @@ str1 = "abc"
 str2 = "12345"
 result = solution(str1, str2)
 print(result)  # "a1b2c345"
+
+
+# 더 나은 코드
+
+def solution(str1, str2):
+    answer = ''
+    for i in range(0,len(str1)):
+        answer = answer + str1[i] + str2[i]
+    return answer
