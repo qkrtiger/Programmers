@@ -4,3 +4,8 @@ function solution(arr) {
   
   return average;
 }
+
+// 다른 방법
+function average(array){
+  return array.reduce((a,b) => a+b) / array.length;
+}
