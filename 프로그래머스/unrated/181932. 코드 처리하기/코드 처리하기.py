@@ -29,3 +29,8 @@ def solution(code):
         return "EMPTY"
     else:
         return ret
+
+
+#다른 코드
+def solution(code):
+    return "".join(code.split("1"))[::2] or "EMPTY"
