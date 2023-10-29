@@ -10,3 +10,10 @@ function solution(my_strings, parts) {
     }
     return result.join('');
 }
+
+//map 사용
+function solution2(my_strings, parts) {
+    return parts.map(([s, e], i) => {
+        return my_strings[i].slice(s, e + 1)
+    }).join('')
+}
