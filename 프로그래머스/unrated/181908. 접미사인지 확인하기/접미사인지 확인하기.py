@@ -6,3 +6,7 @@ def solution(my_string, is_suffix):
         return 1
     else:
         return 0
+
+//endswitch 사용
+def solution(my_string, is_suffix):
+    return int(my_string.endswith(is_suffix))
